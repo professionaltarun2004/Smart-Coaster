@@ -1,7 +1,7 @@
 #define BLYNK_PRINT Serial
 #define BLYNK_TEMPLATE_ID "TMPL3pDOLBYCX"
 #define BLYNK_TEMPLATE_NAME "trailproj2"
-#define BLYNK_AUTH_TOKEN "QNWhcb7n0HRngjKfiVJEdUm6l3JOBhK5"
+#define BLYNK_AUTH_TOKEN "BLYNK_TOKEN"
 #include <BlynkSimpleEsp32.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
@@ -11,9 +11,9 @@
 int it,tempC,internalLedState;
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensor(&oneWire);
-char auth[] = "QNWhcb7n0HRngjKfiVJEdUm6l3JOBhK5";
-char ssid[] = "a1";
-char pass[] = "12345678";
+char auth[] = "YOUR TOKEN";
+char ssid[] = "WIFI_SSID";
+char pass[] = "WIFI_PASSWORD";
 BLYNK_CONNECTED() {
  
   Blynk.syncAll();
